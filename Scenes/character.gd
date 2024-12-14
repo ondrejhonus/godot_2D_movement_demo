@@ -5,6 +5,7 @@ const SPEED = 300.0
 @onready var _camera = $Camera2D
 
 func _ready() -> void:
+	_animated_sprite.play("idle_down")
 	_camera.make_current()
 
 func _process(delta: float) -> void:
